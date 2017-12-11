@@ -8,4 +8,4 @@ var str = buf.toString()
 
 var res = str.split('\n')
 
-console.log(res)
+console.log(res.length-1)
