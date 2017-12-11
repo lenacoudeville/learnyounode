@@ -9,6 +9,7 @@ fs.readdir(file, (err, data) => {
 	var liste = data
 
 	function callback(item){
+		console.log('FICHIERS .MD :')
 			if (path.extname(item)=='.md'){
 			console.log(item);	
 			}
