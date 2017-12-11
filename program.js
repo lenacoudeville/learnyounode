@@ -2,10 +2,9 @@ var fs = require('fs');
 
 var file = process.argv[2]
 
-var buf = fs.readFileSync(file)
 
-var str = buf.toString()
+fs.readFile(file, callback)
 
-var res = str.split('\n')
-
-console.log(res.length-1)
+function callback(err, data){
+	console.log(data.toString().split('\n').length-1)
+}
